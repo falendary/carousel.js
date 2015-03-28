@@ -1,0 +1,109 @@
+body
+{
+	padding-top: 40px;
+}
+.carousel-holder
+{
+	position: relative;
+	border: 1px solid #ccc;
+	width: 210px;
+	height: 160px;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	margin: 10px auto 40px;
+}
+.carousel
+{
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.carousel .carousel-item
+{
+	border: 		1px solid #000;
+	display: 		block;
+	width: 			190px;
+	left: 			10px;
+	top: 			-5px;
+	margin: 		0;
+	height: 		140px;
+	text-align: center;
+	webkit-backface-visibility: hidden;
+	  -moz-backface-visibility: hidden;
+	  -o-backface-visibility: hidden;
+	  backface-visibility: hidden;
+	cursor: 		pointer;
+	line-height: 	150px;
+	position: 		absolute;
+	text-shadow: 	1px 1px #ccc;
+	font-size: 		40px;
+	box-shadow: 	1px 2px 2px #ccc;
+}
+#carousel
+{
+	transform: rotateY(0deg) translateZ(-288px);
+	transition: transform 1s;
+}
+.carousel .carousel-item:fisrt-child
+{
+	background: 	#0ff;
+}
+.carousel .carousel-item:nth-child(1)
+{
+	background: 	#ccc;
+	opacity: 		.9;
+	transform: 		rotateY(0deg) translateZ(288px);	
+}
+.carousel .carousel-item:nth-child(2)
+{
+	background: 	#f0f;
+	color: 			#fff;
+	transform: 		rotateY(40deg) translateZ(288px);
+}
+.carousel .carousel-item:nth-child(3)
+{
+	background: 	#ff0;
+	transform: 		rotateY(80deg) translateZ(288px);
+}
+.carousel .carousel-item:nth-child(4)
+{
+	background: 	#00f;
+	color: 			#fff;
+	transform: 		rotateY(120deg) translateZ(288px);
+}
+.carousel .carousel-item:nth-child(5)
+{
+	background: 	#f00;
+	transform: 		rotateY(160deg) translateZ(288px);
+}
+.carousel .carousel-item:nth-child(6)
+{
+	background: 	#000
+	color: 			#fff;
+	transform: 		rotateY(200deg) translateZ(288px);
+}
+.carousel .carousel-item:nth-child(7)
+{
+	background: 	#f2f;
+	transform: 		rotateY(240deg) translateZ(288px);
+}
+.carousel .carousel-item:nth-child(8)
+{
+	background: 	#2ff;
+	transform: 		rotateY(280deg) translateZ(288px);
+}
+.carousel .carousel-item:nth-child(9)
+{
+	background: 	#ff2;
+	transform: 		rotateY(320deg) translateZ(288px);
+}
+.carousel .carousel-item:last-child
+{
+	background: 	#0f0;
+}
